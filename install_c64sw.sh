@@ -5,7 +5,7 @@
 #
 
 # install the ubuntu packages we'll need to build stuff
-sudo apt-get update && sudo apt-get install -y git make gcc libusb-dev libncurses5-dev git
+sudo apt-get -qq update && sudo apt-get install -qq git make gcc libusb-dev libncurses5-dev git
 
 # stopping here for now. sudo works so we don't have to change the script and
 # apt-get install is working. next step: run through the rest and see what breaks.
