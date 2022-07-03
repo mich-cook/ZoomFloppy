@@ -12,9 +12,11 @@ mkdir /tmp/git
 
 # build cc65
 cd /tmp/git
-git clone https://github.com/cc65/cc65.git cc65
+# git clone https://github.com/cc65/cc65.git cc65
+git clone --depth=1 --branch V2.19 https://github.com/cc65/cc65.git cc65
 cd cc65
-git checkout 93b6efcb2f969c6de0fd1eca5b07dbce18046c0a
+# git checkout 93b6efcb2f969c6de0fd1eca5b07dbce18046c0a
+# git checkout 555282497c3ecf8b313d87d5973093af19c35bd5  # tag V2.19
 make && sudo PREFIX=/usr make install
 
 # build opencbm
